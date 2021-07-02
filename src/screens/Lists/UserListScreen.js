@@ -11,6 +11,7 @@ import React, { useEffect, useState } from "react";
 
 import { FavoriteCard } from "./components";
 import { translate } from "../../functions/translate";
+import { useIsFocused } from "@react-navigation/native";
 import { useSelector } from "react-redux";
 
 const UserListScreen = (props) => {
@@ -20,10 +21,14 @@ const UserListScreen = (props) => {
   const [fullList, setFullList] = useState([]);
   const [listData, setListData] = useState([]);
   const [noData, setNoData] = useState(false);
-
+  const isFocused = useIsFocused();
   useEffect(() => {
     getData();
   }, []);
+  useEffect(() => {
+    getData();
+  }, [isFocused]);
+
   const getData = () => {
     if (props.route.params) {
       if (props.route.params.type == 1) {
