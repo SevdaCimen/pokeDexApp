@@ -1,5 +1,10 @@
 import { AppImages, colors, fonts } from "../../theme";
-import { Block, GradientButton } from "../../components";
+import {
+  Block,
+  GradientButton,
+  UIBackgroundImage,
+  UIStatusBar,
+} from "../../components";
 import { Dimensions, Image, StyleSheet, Text } from "react-native";
 
 import { FinishIntro } from "../../redux/actions/auth";
@@ -13,12 +18,12 @@ const { width } = Dimensions.get("window");
 const IntroScreen = () => {
   const dispatch = useDispatch();
   const navigation = useNavigation();
-  
+
   const next = async () => {
     await dispatch(FinishIntro());
     navigation.navigate("PokeList");
   };
-  
+
   const {
     imgBlock,
     imageStyle,
@@ -30,6 +35,9 @@ const IntroScreen = () => {
   return (
     <>
       <Block block>
+        <UIStatusBar backgroundColor={colors.purpleSoft} />
+
+        <UIBackgroundImage source={AppImages.profile.profileBack} />
         <Block center middle style={imgBlock}>
           <Image source={AppImages.intro.pokeIntro} style={imageStyle} />
         </Block>
