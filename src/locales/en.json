@@ -1,0 +1,18 @@
+{
+    "introHead": "EXPLORE POKEMONS",
+    "myCatchedPokes": "Caught Pokemons",
+    "myFavorites": "Favorite Pokemons",
+    "introContent": "Create your own Pokémon list and choose whatever you want! ",
+    "start": "Start",
+    "pokemonList": "POKEMON LIST",
+    "weight": "Weight",
+    "baseExperience": "TEMEL Deneyim ",
+    "type": "Tip",
+    "moves": "Hareketler",
+    "release": "Bırak",
+    "catch": "Yakala",
+    "myProfile": "PROFİLİM",
+    "noMatch": "No match found.",
+    "pokeRemovedMsg": "Pokemon favori listenizden kaldırıldı.",
+    "pokeAddMsg": "Pokemon favori listenize eklendi."
+}

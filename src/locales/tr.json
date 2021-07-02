@@ -1,0 +1,18 @@
+{
+    "introHead": "POKEMONLARI KEŞFET",
+    "myCatchedPokes": "Pokemonlarım",
+    "myFavorites": "Favorilerim",
+    "introContent": "Kendi Pokémon listenizi oluşturun ve istediğinizi seçin!",
+    "start": "Başla",
+    "pokemonList": "POKEMON LİSTESİ",
+    "weight": "Ağırlık",
+    "baseExperience": "Base Experience ",
+    "type": "Type",
+    "moves": "Moves",
+    "release": "Release",
+    "catch": "Catch",
+    "myProfile": "PROFİLİM",
+    "noMatch": "Eşleşme Bulunamadı.",
+    "pokeRemovedMsg": "Pokemon removed from  favorite list.",
+    "pokeAddMsg": "Pokemon add to  favorite list."
+}
